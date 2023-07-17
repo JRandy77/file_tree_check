@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import time
 
-from smartPath import SmartPath
+from .smartPath import SmartPath
 
 
 class SmartFilePath(SmartPath):

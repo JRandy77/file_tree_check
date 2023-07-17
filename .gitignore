@@ -7,11 +7,11 @@
 /log.txt
 /graph_image.png
 /results/*
-__pycache__
+
 
 results
 
-src/file_tree_check/_version.py
+file_tree_check/_version.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

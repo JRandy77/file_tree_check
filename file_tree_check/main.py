@@ -9,11 +9,12 @@ import re
 from pathlib import Path
 
 from file_tree import FileTree
-from identifierEngine import IdentifierEngine
-from smartDirectoryPath import SmartDirectoryPath
-from smartFilePath import SmartFilePath
-from smartPath import SmartPath
-from statBuilder import StatBuilder
+
+from .identifierEngine import IdentifierEngine
+from .smartDirectoryPath import SmartDirectoryPath
+from .smartFilePath import SmartFilePath
+from .smartPath import SmartPath
+from .statBuilder import StatBuilder
 
 # Edit the following line to point to the config file location in your current installation:
 CONFIG_PATH = Path(__file__).parent / "config.ini"

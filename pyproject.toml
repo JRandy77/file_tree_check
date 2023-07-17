@@ -36,23 +36,23 @@ tests = ["file_tree_check[test]"]
 dev = ["file_tree_check[doc,test]"]
 
 [project.scripts]
-file_tree_check = "file_tree_check.main:main"
+tree_check = "file_tree_check.main:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src.file_tree_check"]
+packages = ["file_tree_check"]
 
 [tool.hatch.version]
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/file_tree_check/_version.py"
+version-file = "file_tree_check/_version.py"
 
 [tool.pytest.ini_options]
 addopts = "-ra -vv"
 
 [tool.coverage.run]
 branch = true
-source = ["src/file_tree_check/"]
+source = ["file_tree_check/"]
 
 
 [tool.codespell]

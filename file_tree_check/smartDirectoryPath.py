@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 
-from smartPath import SmartPath
+from .smartPath import SmartPath
 
 
 class SmartDirectoryPath(SmartPath):
