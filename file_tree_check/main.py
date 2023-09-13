@@ -262,13 +262,6 @@ def get_data_from_paths(
         Expected to be the generator object created by generate_tree()
         but can theoretically be any iterable containing SmartPath objects.
 
-    identifier: IdentifierEngine
-        Used to extract the identifier of each path to aggregate it
-        with similar ones resent in the file structure.
-        This IdentifierEngine is also passed to add_configuration
-        to allow it to extract identifiers as well. This is mostly deprecated at
-        this point.
-
     output_path: pathlib.Path
         The path to the text file where the file tree output will be saved.
         If none, the type of output is skipped.
@@ -301,7 +294,7 @@ def get_data_from_paths(
         File_size is in bytes, modified_time is in seconds (epoch time).
 
     tree: FileTree
-        The FileTree object used for templating not used currently.
+        The FileTree object used for templating the file structure.
 
     Returns
     -------
